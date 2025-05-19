@@ -21,7 +21,7 @@ bedrock_client = boto3.client(service_name="bedrock-runtime", region_name=os.get
 
 # Configure embeddings model
 bedrock_embeddings = BedrockEmbeddings(
-    model_id="amazon.titan-embed-text-v1",
+    model_id="amazon.titan-embed-text-v1", # TODO: consider changing to v2 if possible
     client=bedrock_client
 )
 
